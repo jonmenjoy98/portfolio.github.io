@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container .sidebar h4 {
+            color: rgb(146, 248, 248);
+        }
+
+        .main .cv {
+            padding: 5vh;
+            text-align: CENTER;
+            background-color: pink;
+        }
+        .main .cv h3, h5{
+            padding: 30px;
+        }
+        .main .cv .col1 a:hover{
+            background-color: aqua;
+            cursor: pointer;
+            text-decoration: solid;
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="sidebar sidebarGo">
+        <h4>WELCOME to my own portfolio</h4>
+        <nav>
+            <ul>
+                <li><a href = "/">Home</li></a>
+                <li><a href = "intro.html">My INTRO</li></a>
+                <li><a href = "cv.html">CV</li></a>
+                <li><a href = "skills.html">SKILLS</li></a>
+                <li><a href = "cert.html">CERTIFICATIONS</li></a>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="hambarger">
+            <img class="ham" src="hambar.png" alt="hambarger-sign" width="23">
+            <img class="cross" src="cross.png" alt="cross-sign" width="23">
+        </div>
+        <div class="cv">
+            <div class="col1">
+                <h3>Hello,</h3>
+                <h5> You can download my cv from <a href="CV.pdf" target="_blank">this</a> site. please click on 
+                <a href="CV.pdf" target="_blank">press here</a> or on this.</h5>
+            </div>
+            <div class="col2">
+                <h3>here I have attached my cv</h3>
+                <img src="cv-img.jpg" height="600"width="600">
+            </div>
+    </div>
+</div>
+
+</body>
+<script src="/index.js"> </script>
+</html>

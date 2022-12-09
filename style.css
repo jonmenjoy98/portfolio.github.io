@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.696);
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+.container .sidebar h4 {
+    color: rgb(146, 248, 248);
+}
+.container .sidebar nav {
+    padding: 45px;
+}
+
+.container .sidebar nav li {
+    list-style: none;
+    font-size: 25px;
+    padding: 33px 0;
+}
+
+.container .sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .main {
+    background-color: #ead2d5;
+    width: 100vw;
+    padding: 4px;
+    flex-wrap: wrap;
+}
+
+.container .main .infocontainer {
+    background-color: #ead2d5;
+    height: 65vh;
+    margin: 100px 80px 100px 80px;
+    display: flex;
+
+}
+
+.container .main .infocontainer .devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 5px;
+}
+
+.container .main .infocontainer .devinfo .hello {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.container .main .infocontainer .devinfo .name {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.container .main .infocontainer .devinfo .about {
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+.container .main .infocontainer .devinfo .button {
+    padding: 1rem;
+    margin-top: 34px;
+}
+
+.button button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: #ebc5ca;
+    background-color: rgb(103, 103, 247);
+    font-weight: bold;
+    margin: 0 3px;
+}
+
+.button button:hover {
+    color: rgb(103, 103, 247);
+    background-color: #ebc5ca;
+}
+
+.container .main .infocontainer .devpic img {
+    margin: 0%;
+    width: 32vw;
+    height: 65vh;
+}
+
+.container .main .infocontainer {
+    justify-content: space-around;
+}
+
+.hambarger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.hambarger .ham {
+    margin-top: 10px;
+}
+
+.hambarger .cross {
+    margin-left: 228px;
+    margin-top: 10px;
+}
+
+.sidebarGo {
+    transform: translate(-430px, 0px);
+    position: absolute;
+
+}
+
+
+
+
+@media (max-width: 1240px) {
+    * {
+        padding: 0px;
+    }
+
+    .devpic {
+        display: none;
+    }
+
+    .container .main {
+        width: 96vw;
+        padding: 0px;
+    }
+
+    .sidebar {
+        background-color: rgba(0, 0, 0, 0.696);
+    }
+}
+
+@media (max-width: 440px) {
+    * {
+        font-size: xx-small;
+    }
+
+    .sidebar {
+        background-color: rgba(0, 0, 0, 0.696);
+    }
+
+    .hambarger .cross {
+        margin-left: 127px;
+    }
+}

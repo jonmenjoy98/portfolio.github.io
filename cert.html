@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container .sidebar h4 {
+            color: rgb(146, 248, 248);
+        }
+
+        .main .certificates {
+            text-align: CENTER;
+            background-color: pink;
+            padding-top: 10px;
+        }
+        .main .certificates img{
+            height: 110vh;
+            width: 110vh;
+        }
+        .main .certificates .col1{
+            padding: 30px;
+            color: blueviolet;
+            background-color: rgb(156, 156, 248);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <h4>WELCOME to my own portfolio</h4>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="intro.html">My INTRO</li></a>
+                    <li><a href="cv.html">CV</li></a>
+                    <li><a href="skills.html">SKILLS</li></a>
+                    <li><a href="cert.html">CERTIFICATIONS</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hambarger">
+                <img class="ham" src="hambar.png" alt="hambarger-sign" width="23">
+                <img class="cross" src="cross.png" alt="cross-sign" width="23">
+            </div>
+            <div class="certificates">
+                <div class="col1">
+                    <h3><i> My Certificates </i></h3>
+                </div>
+                <div class="col2">
+                    <h3><i> HTML Certificates </i></h3>
+                    <img src="html.png" alt="html certificate"> 
+                </div>
+                <div class="col3">
+                    <h3><i> CSS Certificates </i></h3>
+                    <img src="css.png" alt="css certificate"> 
+                </div>
+                <div class="col4">
+                    <h3><i> JavaScript Certificates </i></h3>
+                    <img src="javascript.png" alt="JS certificate"> 
+                </div>
+                <div class="col5">
+                    <h3><i> SQL Certificates </i></h3>
+                    <img src="sql.png" alt="sql certificate"> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"> </script>
+
+</html>
